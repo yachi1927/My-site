@@ -2,7 +2,7 @@
 
 /* タブレット版 */
 
-@media (max-width: 850px){
+@media (max-width: 800px){
 .page-title{
   font-size: 32px;
 }
@@ -10,7 +10,7 @@
 /* header */
 
 .main-nav{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 10px;
 }
 
@@ -30,16 +30,14 @@
   margin-top: 60px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea{
-  max-width: 100%;
-}
+/* 作品 */
+
+
 }
 
 /* モバイル版 */
 
-@media (max-width: 500px){
+@media (max-width: 420px){
   .page-title{
     font-size: 24px;
   }
@@ -67,15 +65,22 @@ textarea{
     margin-top: 40px;
   }
   
-  input[type="text"],
-  input[type="email"]{
-    max-width: 100%;
+  /* 作品集 */
+.illust-image{
+  min-width: 100%;;
+  margin: 0;
+}
+
+/* 作品 */
+.illust-flex{
+  flex-direction: column;
   }
 
-  textarea{
-    width: 0.5;
-  }
-  }  
+.illust-flex img{
+  min-width: 100%;
+}
+
+}  
 
 
 /* 共通 */
@@ -120,6 +125,7 @@ img{
 
 .main-nav a{
   color: rgb(36, 44, 72);
+  transition: 1s;
 }
 
 .main-nav a:hover{
@@ -216,6 +222,7 @@ img{
   text-align: center;
   font-family: "M PLUS 1p";
   font-weight: bold;
+  color: rgb(36, 44, 72);
 }
 
 .twitter-timeline{
@@ -245,12 +252,14 @@ img{
   background-color: rgb(0, 174, 128);
   padding-right: 35px;
   padding-left: 35px;
+  transition: 1s;
 }
 
 .item2{
   background-color: rgb(0, 137, 195);
   padding-right: 35px;
   padding-left: 35px;
+  transition: 1s;
 }
 
 .illust-page a{
@@ -258,14 +267,75 @@ img{
 }
 
 .item1:hover{
-  background-color: rgb(170, 231, 218);
-  padding: auto;
+  opacity: 0.7;
+  color: white;
 }
 
 .item2:hover{
-  background-color: rgb(176, 213, 230);
-  padding-right: 35px;
-  padding-left: 35px;
+  opacity: 0.7;
+  color: white;
+}
+
+/* 作品集 */
+
+.illust-content{
+  background-color: rgb(238, 247, 255, 0.8);
+  background-size:cover;
+  margin: 10px 0 10px 0;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.illust-image{
+  width: 23%;
+  height: 200px;
+  background-size: cover;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+.illust-image p{
+  transition: 1s;
+}
+
+.illust-image p:hover{
+  opacity: 0.5;
+  color: white;
+}
+
+/* 作品 */
+
+.illust-flex{
+  display: flex;
+  background-color: rgb(238, 247, 255, 0.8);
+  background-size:cover;
+}
+
+.illust-flex img{
+  width: 35%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+aside{
+  text-align: center;
+  padding: 100px;
+  color: rgb(36, 44, 72);
+}
+
+aside h1{
+  font-family: "M PLUS 1p";
+  font-weight: bolder;
+}
+
+aside p{
+  font-family: "M PLUS 1p";
+  font-weight: bolder;
 }
 
 /* footer */

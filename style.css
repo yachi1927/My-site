@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* タブレット版 */
 
 @media (max-width: 800px){
@@ -336,6 +337,58 @@ aside h1{
 aside p{
   font-family: "M PLUS 1p";
   font-weight: bolder;
+}
+
+/* スライド2枚 */
+
+.css-carousel-slider2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.css-carousel-slider2 img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  
+}
+
+.css-carousel-slider2 .slide-wrap {
+  width: 200%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  animation: css-carousel-slider2 10s infinite;
+  animation-delay: 2s;
+}
+
+.css-carousel-slider2 .slide-wrap-main {
+  width: 100%;
+  z-index: 1;
+  animation: css-carousel-slider-main2 10s infinite;
+  animation-delay: 2s;
+}
+.css-carousel-slider2 .slide {
+  width: 100%;
+}
+
+@keyframes css-carousel-slider2 {
+  0% { transform: translateX(0); }
+
+  40% { transform: translateX(calc(1 / 2 * -100%)); }
+  50% { transform: translateX(calc(1 / 2 * -100%)); }
+
+  90% { transform: translateX(calc(2 / 2 * -100%)); }
+  100% { transform: translateX(calc(2 / 2 * -100%)); }
+}
+
+@keyframes css-carousel-slider-main2 {
+  0% { transform: translateX(100%); }
+  50% { transform: translateX(100%); }
+  90% { transform: translateX(0%);}
 }
 
 /* footer */

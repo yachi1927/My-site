@@ -203,47 +203,6 @@ img{
   font-weight: bolder;
 }
 
-form div{
-  margin-bottom: 14px;
-  margin-left: 40px;
-}
-
-label{
-  font-size: 1.125rem;
-  margin-bottom: 10px;
-  display: block;
-  font-family: "M PLUS 1p";
-  font-weight: bolder;
-}
-
-input[type="text"],
-input[type="email"],
-textarea{
-  background: rgba(255,255,255,.7);
-  border: 1.5px solid rgb(199, 203, 212);
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1rem;
-}
-
-input[type="text"],
-input[type="email"]{
-  width: 100%;
-  max-width: 240px;
-}
-
-textarea{
-  width: 250px;
-  max-width: 480px;
-  height: 6rem;
-}
-
-input[type="submit"]{
-  border: none;
-  cursor: pointer;
-  line-height: 1;
-  margin-left: 40px;
-}
 
 /* sns */
 

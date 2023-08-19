@@ -81,6 +81,11 @@
   min-width: 100%;
 }
 
+.css-carousel-slider2,
+.css-carousel-slider7 {
+  min-width: 100%;
+}
+
 }  
 
 
@@ -133,6 +138,27 @@ img{
   background: rgb(36, 44, 72);
   color: aliceblue;
 }
+
+/* フェードイン */
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
 
 /* home */
 
@@ -311,9 +337,11 @@ img{
 /* 作品 */
 
 .illust-flex{
-  display: flex;
+  display: inline-flex;
+  vertical-align: top;
   background-color: rgb(238, 247, 255, 0.8);
   background-size:cover;
+  justify-content: center;
 }
 
 .illust-flex img{
@@ -324,36 +352,36 @@ img{
 }
 
 aside{
-  text-align: center;
-  padding: 100px;
+  font-family: "M PLUS 1p";
+  font-weight: bolder;
   color: rgb(36, 44, 72);
 }
 
 aside h1{
-  font-family: "M PLUS 1p";
-  font-weight: bolder;
+  padding: 65px;
+  text-align: center;
 }
 
 aside p{
-  font-family: "M PLUS 1p";
-  font-weight: bolder;
+  padding: 65px;
 }
 
-/* スライド2枚 */
 
+/* スライド２枚 */
+/* 全体設定 */
 .css-carousel-slider2 {
-  width: 100%;
+  width: 35%;
+  height: auto;
   overflow: hidden;
   position: relative;
 }
-
 .css-carousel-slider2 img {
   width: 100%;
   height: auto;
   vertical-align: top;
-  
 }
 
+/* スライド設定 */
 .css-carousel-slider2 .slide-wrap {
   width: 200%;
   position: absolute;
@@ -361,20 +389,20 @@ aside p{
   top: 0;
   left: 0;
   z-index: 0;
-  animation: css-carousel-slider2 10s infinite;
+  animation: css-carousel-slider2 15s infinite;
   animation-delay: 2s;
 }
-
 .css-carousel-slider2 .slide-wrap-main {
   width: 100%;
   z-index: 1;
-  animation: css-carousel-slider-main2 10s infinite;
+  animation: css-carousel-slider-main2 15s infinite;
   animation-delay: 2s;
 }
 .css-carousel-slider2 .slide {
   width: 100%;
 }
 
+/* スライダーアニメーションの設定 */
 @keyframes css-carousel-slider2 {
   0% { transform: translateX(0); }
 
@@ -389,6 +417,73 @@ aside p{
   0% { transform: translateX(100%); }
   50% { transform: translateX(100%); }
   90% { transform: translateX(0%);}
+}
+
+/* スライド７枚 */
+/* 全体設定 */
+.css-carousel-slider7 {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.css-carousel-slider7 img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* スライド設定 */
+.css-carousel-slider7 .slide-wrap {
+  width: 700%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  animation: css-carousel-slider7 40s infinite;
+  animation-delay: 5s;
+}
+.css-carousel-slider7 .slide-wrap-main {
+  width: 100%;
+  z-index: 1;
+  animation: css-carousel-slider-main7 40s infinite;
+  animation-delay: 5s;
+}
+.css-carousel-slider7 .slide {
+  width: 100%;
+}
+
+/* スライダーアニメーションの設定 */
+@keyframes css-carousel-slider7 {
+  0% { transform: translateX(0); }
+
+  11.8% { transform: translateX(calc(1 / 7 * -100%)); }
+  14.3% { transform: translateX(calc(1 / 7 * -100%)); }
+
+  26.1% { transform: translateX(calc(2 / 7 * -100%)); }
+  28.6% { transform: translateX(calc(2 / 7 * -100%)); }
+
+  40.4% { transform: translateX(calc(3 / 7 * -100%)); }
+  42.9% { transform: translateX(calc(3 / 7 * -100%)); }
+
+  54.7% { transform: translateX(calc(4 / 7 * -100%)); }
+  57.2% { transform: translateX(calc(4 / 7 * -100%)); }
+
+  69% { transform: translateX(calc(5 / 7 * -100%)); }
+  71.5% { transform: translateX(calc(5 / 7 * -100%)); }
+
+  83.3% { transform: translateX(calc(6 / 7 * -100%)); }
+  85.8% { transform: translateX(calc(6 / 7 * -100%)); }
+
+  97.5% { transform: translateX(calc(7 / 7 * -100%)); }
+  100% { transform: translateX(calc(7 / 7 * -100%)); }
+}
+
+@keyframes css-carousel-slider-main7 {
+  0% { transform: translateX(100%); }
+  85.8% { transform: translateX(100%); }
+  97.5% { transform: translateX(0%);}
 }
 
 /* footer */

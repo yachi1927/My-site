@@ -236,6 +236,13 @@ img{
   font-weight: bolder;
 }
 
+.banner-image{
+  font-family: "M PLUS 1p";
+  color: rgb(36, 44, 72);
+  text-align: center;
+  margin-top: 40px;
+}
+
 
 /* sns */
 
@@ -332,6 +339,20 @@ img{
 .illust-image p:hover{
   opacity: 0.5;
   color: white;
+}
+
+.page-select{
+  font-family: "M PLUS 1p";
+  margin-top: 50px;
+  margin-left: 15px;
+
+}
+
+.page-select a{
+  color: rgb(36, 44, 72);
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 /* 作品 */

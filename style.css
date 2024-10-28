@@ -222,6 +222,17 @@ img{
   margin: 0 auto;
 }
 
+.otherlink{
+  font-family: "M PLUS 1p";
+  color: rgb(36, 44, 72);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.otherlink img{
+  border-radius:0%;
+}
+
 /* 問い合わせ */
 
 .contact{
@@ -237,6 +248,13 @@ img{
 }
 
 .banner-image{
+  font-family: "M PLUS 1p";
+  color: rgb(36, 44, 72);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.friendship{
   font-family: "M PLUS 1p";
   color: rgb(36, 44, 72);
   text-align: center;

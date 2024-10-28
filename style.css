@@ -427,6 +427,7 @@ aside p{
   object-fit: contain; /* 画像を切り取らずに収める */}
 
 button {
+  font-family: "M PLUS 1p";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

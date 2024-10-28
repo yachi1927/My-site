@@ -20,15 +20,14 @@
 
   <div class="fadeUp">
     <div class="illust-flex">
-      <div class="css-carousel-slider2">
-        <div class="slide-wrap-main">
-            <div class="slide"><img src="imeges/original/IMG_3925.PNG" alt=""></div><!-- 最初に表示される画像(*1) -->
+      <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)"></button>
+        <div class="carousel-slides">
+            <img src="imeges/original/IMG_3925.PNG" alt="Image 1">
+            <img src="imeges/original/IMG_3926.PNG" alt="Image 2">
         </div>
-        <div class="slide-wrap">
-            <div class="slide"><img src="imeges/original/IMG_3925.PNG" alt=""></div><!-- (*1)と同じ画像 -->
-            <div class="slide"><img src="imeges/original/IMG_3926.PNG" alt=""></div>
-        </div>
-    </div>
+        <button class="next" onclick="moveSlide(1)"></button>
+    </div>    
       <aside>
         <h1>創作イケオジ</h1>
         <p>大塚明義(1枚目) <br>

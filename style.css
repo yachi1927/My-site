@@ -405,124 +405,46 @@ aside p{
   padding: 65px;
 }
 
+/* スライドver2 */
 
-/* スライド２枚 */
-/* 全体設定 */
-.css-carousel-slider2 {
-  width: 35%;
-  height: auto;
-  overflow: hidden;
+.carousel {
   position: relative;
-}
-.css-carousel-slider2 img {
   width: 100%;
-  height: auto;
-  vertical-align: top;
-}
-
-/* スライド設定 */
-.css-carousel-slider2 .slide-wrap {
-  width: 200%;
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  animation: css-carousel-slider2 15s infinite;
-  animation-delay: 2s;
-}
-.css-carousel-slider2 .slide-wrap-main {
-  width: 100%;
-  z-index: 1;
-  animation: css-carousel-slider-main2 15s infinite;
-  animation-delay: 2s;
-}
-.css-carousel-slider2 .slide {
-  width: 100%;
-}
-
-/* スライダーアニメーションの設定 */
-@keyframes css-carousel-slider2 {
-  0% { transform: translateX(0); }
-
-  40% { transform: translateX(calc(1 / 2 * -100%)); }
-  50% { transform: translateX(calc(1 / 2 * -100%)); }
-
-  90% { transform: translateX(calc(2 / 2 * -100%)); }
-  100% { transform: translateX(calc(2 / 2 * -100%)); }
-}
-
-@keyframes css-carousel-slider-main2 {
-  0% { transform: translateX(100%); }
-  50% { transform: translateX(100%); }
-  90% { transform: translateX(0%);}
-}
-
-/* スライド７枚 */
-/* 全体設定 */
-.css-carousel-slider7 {
-  width: 35%;
-  height: auto;
+  max-width: 600px;
+  margin: auto;
   overflow: hidden;
-  position: relative;
-}
-.css-carousel-slider7 img {
-  width: 100%;
-  height: auto;
-  vertical-align: top;
 }
 
-/* スライド設定 */
-.css-carousel-slider7 .slide-wrap {
-  width: 700%;
-  position: absolute;
+.carousel-slides {
   display: flex;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  animation: css-carousel-slider7 40s infinite;
-  animation-delay: 5s;
-}
-.css-carousel-slider7 .slide-wrap-main {
-  width: 100%;
-  z-index: 1;
-  animation: css-carousel-slider-main7 40s infinite;
-  animation-delay: 5s;
-}
-.css-carousel-slider7 .slide {
-  width: 100%;
+  transition: transform 0.5s ease;
 }
 
-/* スライダーアニメーションの設定 */
-@keyframes css-carousel-slider7 {
-  0% { transform: translateX(0); }
+.carousel-slides img {
+  width: 60%;
+  height: auto; /* 高さを自動に設定 */
+  max-height: 400px; /* 最大高さを設定して表示範囲を制限 */
+  object-fit: contain; /* 画像を切り取らずに収める */}
 
-  11.8% { transform: translateX(calc(1 / 7 * -100%)); }
-  14.3% { transform: translateX(calc(1 / 7 * -100%)); }
-
-  26.1% { transform: translateX(calc(2 / 7 * -100%)); }
-  28.6% { transform: translateX(calc(2 / 7 * -100%)); }
-
-  40.4% { transform: translateX(calc(3 / 7 * -100%)); }
-  42.9% { transform: translateX(calc(3 / 7 * -100%)); }
-
-  54.7% { transform: translateX(calc(4 / 7 * -100%)); }
-  57.2% { transform: translateX(calc(4 / 7 * -100%)); }
-
-  69% { transform: translateX(calc(5 / 7 * -100%)); }
-  71.5% { transform: translateX(calc(5 / 7 * -100%)); }
-
-  83.3% { transform: translateX(calc(6 / 7 * -100%)); }
-  85.8% { transform: translateX(calc(6 / 7 * -100%)); }
-
-  97.5% { transform: translateX(calc(7 / 7 * -100%)); }
-  100% { transform: translateX(calc(7 / 7 * -100%)); }
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(116, 124, 150, 0.3);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px;
+  z-index: 10; 
 }
 
-@keyframes css-carousel-slider-main7 {
-  0% { transform: translateX(100%); }
-  85.8% { transform: translateX(100%); }
-  97.5% { transform: translateX(0%);}
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 /* footer */

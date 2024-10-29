@@ -314,6 +314,14 @@ img{
   transition: 1s;
 }
 
+.item3{
+  background-color: rgb(133, 50, 193);
+  padding-right: 35px;
+  padding-left: 35px;
+  transition: 1s;
+}
+
+
 .illust-page a{
   color: rgb(236, 240, 255);
 }
@@ -447,6 +455,103 @@ button {
 .next {
   right: 10px;
 }
+
+/* diary */
+
+.diary{
+  text-align: center;
+  color: rgb(36, 44, 72);
+  background-color: rgb(238, 247, 255, 0.8);
+  background-size:cover;
+  padding-top: 15%;
+  padding-bottom: 300px;
+}
+
+.diary-title{
+  font-weight: bold;
+  font-family: "M PLUS 1p";
+  margin-bottom: 80px;
+}
+
+.diary-subtitle{
+  font-weight: bold;
+  font-family: "M PLUS 1p";
+  text-align: left;
+  border-bottom: 1px solid rgb(36, 44, 72);
+  padding-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.diary p{
+  font-weight: bold;
+  font-family: "M PLUS 1p";
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.diary-contents{
+  display: block;
+}
+
+.diary-contents a{
+  font-weight: bold;
+  font-family: "M PLUS 1p";
+  color: rgb(54, 74, 147);
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: underline;
+}
+
+details {
+  height: 10px;
+  transition: .5s;
+}
+details[open] {
+  height: 80px;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "M PLUS 1p";
+  text-align: left;
+  border-bottom: 1px solid rgb(36, 44, 72);
+  padding-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* diary-contents */
+
+.diary-flex{
+  text-align: center;
+  color: rgb(36, 44, 72);
+  background-color: rgb(238, 247, 255, 0.8);
+  background-size:cover;
+  padding-top: 15%;
+  padding-bottom: 300px;
+}
+
+.diary-flex h1{
+  font-weight: bold;
+  font-family: "M PLUS 1p";
+  margin-bottom: 80px;
+  border-bottom: 1px solid rgb(36, 44, 72);
+}
+
+.diary-flex img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.diary-flex a{
+  font-weight: bold;
+  font-family: "M PLUS 1p";
+  color: rgb(36, 44, 72);
+}
+
 
 /* footer */
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,37 +13,48 @@
   <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="home" class="big-bg">
 
-  <div class="fadeUp">
-    <div class="illust-flex">
-      <div class="carousel">
-        <button class="prev" onclick="moveSlide(-1)">←</button>
-        <div class="carousel-slides">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczMTEqpCJCZUYCix-h9pA_vPGKVFJ3c4PY5kZUe1a0bCbBX1gYv0WElfpRL9cNRJITHr9mguYUXDqAKzWo4oBGzxjPCt7FSKbfhA-A8yN7DVq5Lv_8TiVdp1YT6fQDhHX3UYiZYiz7w-fBTouBosnuyV3Q=w1300-h1646-s-no-gm?authuser=0" alt="Image 1">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczNffT-6tXoRuFTErvvjNwqlUYrlK2L6nTJPB0RoELSBs4o03ntnlqRQ89AUpc3VY1ZR2gmaTmK3YodEx1qx-Z75PZW8If8piC30O6cKJDVGZp4BA2fmhqAcJbmNvPfRZ5e36xJxsaoRlHPagMNi2b-cGg=w662-h1024-s-no-gm?authuser=0" alt="Image 2">
-        </div>
-        <button class="next" onclick="moveSlide(1)">→</button>
-    </div>
+    <div class="fadeUp">
+      <div class="illust-flex">
+        <div class="carousel">
+          <button class="carousel-button prev" aria-label="前へ">&#10094;</button>
+          <button class="carousel-button next" aria-label="次へ">&#10095;</button>
 
-      <aside>
-        <h1>あすとろ</h1>
-        <p>地球に住む宇宙人。<br>
-          地球旅行にてクロワッサンに出会い永住を決意。<br>
-          心優しくおおらかな性格。<br>
-          <br>
-          使用ソフト<br>
-          CLIP STUDIO PAINT</p> 
-      </aside>
-    </div>
+          <div class="carousel-track">
+            <div class="carousel-item"><img
+                src="https://lh3.googleusercontent.com/pw/AP1GczNffT-6tXoRuFTErvvjNwqlUYrlK2L6nTJPB0RoELSBs4o03ntnlqRQ89AUpc3VY1ZR2gmaTmK3YodEx1qx-Z75PZW8If8piC30O6cKJDVGZp4BA2fmhqAcJbmNvPfRZ5e36xJxsaoRlHPagMNi2b-cGg=w662-h1024-s-no-gm?authuser=0"
+                alt="Slide 1"></div>
+            <div class="carousel-item"><img
+                src="https://lh3.googleusercontent.com/pw/AP1GczMTEqpCJCZUYCix-h9pA_vPGKVFJ3c4PY5kZUe1a0bCbBX1gYv0WElfpRL9cNRJITHr9mguYUXDqAKzWo4oBGzxjPCt7FSKbfhA-A8yN7DVq5Lv_8TiVdp1YT6fQDhHX3UYiZYiz7w-fBTouBosnuyV3Q=w1300-h1646-s-no-gm?authuser=0"
+                alt="Slide 2"></div>
+            <div class="carousel-item"><img
+                src="https://lh3.googleusercontent.com/pw/AP1GczMXHIG18-fTgyHrFGeRqTKPxO_fanMWYXvIQ3J58D8GsqYo0RBo5mMCWZMHuUX6Y55yLqrxK2WFBvYekuMC8dBT-eDkMml2-qNWT1UMGP8EVs-1_92cj-ku8c_MJtxiiOyGcfAEHQon9lwBMIXpWdhN9w=w1300-h1646-s-no-gm?authuser=0"
+                alt="Slide 2"></div>
+
+          </div>
+        </div>
+        <aside>
+          <h1>あすとろ</h1>
+          <p>地球に住む宇宙人。<br>
+            地球旅行にてクロワッサンに出会い永住を決意。<br>
+            心優しくおおらかな性格。<br>
+            <br>
+            使用ソフト<br>
+            CLIP STUDIO PAINT
+          </p>
+        </aside>
+      </div>
     </div>
 
   </div>
   <script src="script.js"></script>
 
 </body>
+
 </html>

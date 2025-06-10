@@ -1,15 +1,26 @@
-"use strict";
+document.addEventListener('DOMContentLoaded', () => {
+      const track = document.querySelector('.carousel-track');
+      const items = document.querySelectorAll('.carousel-item');
+      const prevBtn = document.querySelector('.carousel-button.prev');
+      const nextBtn = document.querySelector('.carousel-button.next');
 
-let currentIndex = 0;
+      let index = 0;
 
-function moveSlide(direction) {
-  const slides = document.querySelectorAll(".carousel-slides img");
-  const totalSlides = slides.length;
+      const updatePosition = () => {
+        const itemWidth = items[0].offsetWidth;
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+      };
 
-  currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-  const offset = -currentIndex * 100;
+      prevBtn.addEventListener('click', () => {
+        index = (index - 1 + items.length) % items.length;
+        updatePosition();
+      });
 
-  document.querySelector(
-    ".carousel-slides"
-  ).style.transform = `translateX(${offset}%)`;
-}
+      nextBtn.addEventListener('click', () => {
+        index = (index + 1) % items.length;
+        updatePosition();
+      });
+
+      window.addEventListener('resize', updatePosition);
+      updatePosition();
+    });

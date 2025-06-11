@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,35 +13,42 @@
   <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="home" class="big-bg">
 
-  <div class="fadeUp">
-    <div class="illust-flex">
-      <div class="carousel">
-        <button class="prev" onclick="moveSlide(-1)">←</button>
-        <div class="carousel-slides">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczN5ZJlZcNthgINV7I0g_eeKmpbz0OFq0tSao5Y192Fyp16dfwRrhrtCxttfjsEgedvhsEpmMYkYZLb520sany8YMYbI4JQrIjEmXXju5a1Xjz2tfvw4r5QyzOT7D6bwXYF_bOrb1fRRpL6TP5ggwLMZRw=w1300-h1646-s-no-gm?authuser=0" alt="Image 1">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczNAk4pRbD9Y-tNVXNm9c9Od9jB6zM0HzjZkt4EAjv_wEpmqgG9tHw_Va85xQNUuu6DBK129gFKpZUNgG_xCRidO7N2Eel5YYgGLZUm1hxk3yjnH4CsFwgWi4lSD_KVNsQOc3w5UxjR2YET-QE71-pV0vw=w1300-h1646-s-no-gm?authuser=0" alt="Image 2">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczO1Kw8OW1QYB5gQzquR8hc51y1LzPz6OadpBJOIQR9y-QrnAvJqPSgG73I7e1qlSvuGfR4vWSq0AHPkgGea4k5NyjIoJKCG3uw30p6YfHJoNqhqXoBUY3o0MVMmh8JcofU7zuui-lCte_47oFx47OmTfg=w1300-h1646-s-no-gm?authuser=0" alt="Image 2">
+    <div class="fadeUp">
+      <div class="illust-flex">
+        <div class="carousel">
+          <button class="carousel-button prev" aria-label="前へ">&#10094;</button>
+          <button class="carousel-button next" aria-label="次へ">&#10095;</button>
+
+          <div class="carousel-track">
+            <div class="carousel-item"><img
+                src="https://lh3.googleusercontent.com/pw/AP1GczN5ZJlZcNthgINV7I0g_eeKmpbz0OFq0tSao5Y192Fyp16dfwRrhrtCxttfjsEgedvhsEpmMYkYZLb520sany8YMYbI4JQrIjEmXXju5a1Xjz2tfvw4r5QyzOT7D6bwXYF_bOrb1fRRpL6TP5ggwLMZRw=w1300-h1646-s-no-gm?authuser=0"
+                alt="Slide 1"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczNAk4pRbD9Y-tNVXNm9c9Od9jB6zM0HzjZkt4EAjv_wEpmqgG9tHw_Va85xQNUuu6DBK129gFKpZUNgG_xCRidO7N2Eel5YYgGLZUm1hxk3yjnH4CsFwgWi4lSD_KVNsQOc3w5UxjR2YET-QE71-pV0vw=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczO1Kw8OW1QYB5gQzquR8hc51y1LzPz6OadpBJOIQR9y-QrnAvJqPSgG73I7e1qlSvuGfR4vWSq0AHPkgGea4k5NyjIoJKCG3uw30p6YfHJoNqhqXoBUY3o0MVMmh8JcofU7zuui-lCte_47oFx47OmTfg=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+
+          </div>
         </div>
-        <button class="next" onclick="moveSlide(1)">→</button>
-    </div>    
-      <aside>
-        <h1><a tabindex="-1">Misskey.io Trio</a></h1>
-        <p><a tabindex="-1">Misskey.ioの看板トリオのファンアート。</a><br>
-          <br>
-          使用ソフト<br>
-          CLIP STUDIO PAINT</p> 
-      </aside>
-    </div>  
-  </div>
+        <aside>
+          <h1><a tabindex="-1">Misskey.io Trio</a></h1>
+          <p><a tabindex="-1">Misskey.ioの看板トリオのファンアート。</a><br>
+            <br>
+            使用ソフト<br>
+            CLIP STUDIO PAINT
+          </p>
+        </aside>
+      </div>
+    </div>
 
   </div>
   <script src="script.js"></script>
 
 </body>
+
 </html>

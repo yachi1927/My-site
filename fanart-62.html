@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,36 +13,41 @@
   <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="home" class="big-bg">
 
-  <div class="fadeUp">
-    <div class="illust-flex">
-      <div class="carousel">
-        <button class="prev" onclick="moveSlide(-1)">←</button>
-        <div class="carousel-slides">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczNQ6YHWfW4y6ghmq555Zwh2kvgchjyrRVYsS5c9MgUtnWolcsnM3GsRZq107-jbWEskoZ6NbvBSqcO_G5Uh8cquI029jCOu76uBL_WqXn0j5WaqAhwgYo9p2-OZ4KbGXFzv8pK9bG7KE_1-1-Pq6QDHVw=w1300-h1646-s-no-gm?authuser=0" alt="Image 1">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczMy5BNHZj54JpwqyZARtTPoR90aA1FW9Jtwe5W_Cpx4YJrWBX3d4K-_I8ClUZSzV2XebOdKP0RaKBLKcOA7DU47MgEinrK9UYqgYNtnfAt5mspLSnGDFYHg3IR3PzoiShThT3NvPsx5HmL5n3EPjeITyw=w1300-h1646-s-no-gm?authuser=0" alt="Image 2">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczPDt-kAq6rUjLKdRGtB_ErrbPEkqVK7bKefChVPt93qxY5nxj5PECp2FGsIPSmbUWpd6c67ilwM9Cyhr0j09grIXjXHVO2X69uBxVCY6H0zVWPFxwuKu8uU87PAUZca3_7j4sPuBa8oJSxLJbM1MY7ySA=w1300-h1646-s-no-gm?authuser=0" alt="Image 2">
+    <div class="fadeUp">
+      <div class="illust-flex">
+        <div class="carousel">
+          <button class="carousel-button prev" aria-label="前へ">&#10094;</button>
+          <button class="carousel-button next" aria-label="次へ">&#10095;</button>
+
+          <div class="carousel-track">
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczNQ6YHWfW4y6ghmq555Zwh2kvgchjyrRVYsS5c9MgUtnWolcsnM3GsRZq107-jbWEskoZ6NbvBSqcO_G5Uh8cquI029jCOu76uBL_WqXn0j5WaqAhwgYo9p2-OZ4KbGXFzv8pK9bG7KE_1-1-Pq6QDHVw=w1300-h1646-s-no-gm?authuser=0" alt="Slide 1"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczMy5BNHZj54JpwqyZARtTPoR90aA1FW9Jtwe5W_Cpx4YJrWBX3d4K-_I8ClUZSzV2XebOdKP0RaKBLKcOA7DU47MgEinrK9UYqgYNtnfAt5mspLSnGDFYHg3IR3PzoiShThT3NvPsx5HmL5n3EPjeITyw=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczPDt-kAq6rUjLKdRGtB_ErrbPEkqVK7bKefChVPt93qxY5nxj5PECp2FGsIPSmbUWpd6c67ilwM9Cyhr0j09grIXjXHVO2X69uBxVCY6H0zVWPFxwuKu8uU87PAUZca3_7j4sPuBa8oJSxLJbM1MY7ySA=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+
+          </div>
         </div>
-        <button class="next" onclick="moveSlide(1)">→</button>
-    </div>    
-      <aside>
-        <h1>いらすとやチャレンジ</h1>
-        <p>流行ってたやつ。<br>
-          明らかに性癖がばれた気がする。<br>
-          <br>
-          使用ソフト<br>
-          CLIP STUDIO PAINT</p> 
-      </aside>
-    </div>  
-  </div>
+        <aside>
+          <h1>いらすとやチャレンジ</h1>
+          <p>流行ってたやつ。<br>
+            明らかに性癖がばれた気がする。<br>
+            <br>
+            使用ソフト<br>
+            CLIP STUDIO PAINT
+          </p>
+        </aside>
+      </div>
+    </div>
 
   </div>
   <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,37 +13,40 @@
   <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+JP&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="home" class="big-bg">
 
-  <div class="fadeUp">
-    <div class="illust-flex">
-      <div class="carousel">
-        <button class="prev" onclick="moveSlide(-1)">←</button>
-        <div class="carousel-slides">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczO8FbdXAP5eHXHVQRJeYPkJZsh_Oaqo_dR80rQ2mQjHd493MgD5I0r3TRizopS7RKumpu6CC3ITuqeygdxqHYFjhMW2fe_GoxCx_T6-5cFelcJyfC9l808-qb-NUkvnxmvARmGTDORMcAAbDRj-dENi7Q=w1250-h1646-s-no-gm?authuser=0" alt="Image 1">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOkXFiu_wC1mRUAZkSDQNffmh9kdf_m3uqL2L8w7-zvZvz2nQFCIf0XP_SjVCdQeOnyXCdUj7pM3uAESE31v36gnaJyy690CjnlS1rweE2RAAf0SeXAmUGzJ5v_fk7F_XcsbAwM7VC5eDZwbl8dinqIOw=w1300-h1646-s-no-gm?authuser=0" alt="Image 2">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczNWG6G5I87NpBFhKojLR3GOW8nRFNVTrwaT6ljhC4ND_gHsGG-x5nDcp4Ml1RLHIKYz-cc_aWb3KRLzIv265RqC3KZx46rpKTCXC7l_ZwyVBMxnACiiC7bDwMtDEEuMhQTOdna5_DcxGOXBIbNI85AMxQ=w1300-h1646-s-no-gm?authuser=0" alt="Image 3">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOClzBbGrbcHzINqWKLwljTpdie-JGpXTq_zFerfuF3EAj5MwTVw2ckqQxcyNE3hy45zGMR8K9USmWbp51hE5j8FkUVftwYhnb-XbTv2uEUU_IATzwtN0UKJXwym5eIS7iEAoci7k90BlytO5oidFsiUQ=w1300-h1646-s-no-gm?authuser=0" alt="Image 3">
+    <div class="fadeUp">
+      <div class="illust-flex">
+        <div class="carousel">
+          <button class="carousel-button prev" aria-label="前へ">&#10094;</button>
+          <button class="carousel-button next" aria-label="次へ">&#10095;</button>
 
+          <div class="carousel-track">
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczO8FbdXAP5eHXHVQRJeYPkJZsh_Oaqo_dR80rQ2mQjHd493MgD5I0r3TRizopS7RKumpu6CC3ITuqeygdxqHYFjhMW2fe_GoxCx_T6-5cFelcJyfC9l808-qb-NUkvnxmvARmGTDORMcAAbDRj-dENi7Q=w1250-h1646-s-no-gm?authuser=0" alt="Slide 1"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczOkXFiu_wC1mRUAZkSDQNffmh9kdf_m3uqL2L8w7-zvZvz2nQFCIf0XP_SjVCdQeOnyXCdUj7pM3uAESE31v36gnaJyy690CjnlS1rweE2RAAf0SeXAmUGzJ5v_fk7F_XcsbAwM7VC5eDZwbl8dinqIOw=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczNWG6G5I87NpBFhKojLR3GOW8nRFNVTrwaT6ljhC4ND_gHsGG-x5nDcp4Ml1RLHIKYz-cc_aWb3KRLzIv265RqC3KZx46rpKTCXC7l_ZwyVBMxnACiiC7bDwMtDEEuMhQTOdna5_DcxGOXBIbNI85AMxQ=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+            <div class="carousel-item"><img src="https://lh3.googleusercontent.com/pw/AP1GczOClzBbGrbcHzINqWKLwljTpdie-JGpXTq_zFerfuF3EAj5MwTVw2ckqQxcyNE3hy45zGMR8K9USmWbp51hE5j8FkUVftwYhnb-XbTv2uEUU_IATzwtN0UKJXwym5eIS7iEAoci7k90BlytO5oidFsiUQ=w1300-h1646-s-no-gm?authuser=0" alt="Slide 2"></div>
+          </div>
         </div>
-        <button class="next" onclick="moveSlide(1)">→</button>
-    </div>    
-      <aside>
-        <h1>ポケモンまとめ①</h1>
-        <p>らくがき。<br>
-          <br>
-          使用ソフト<br>
-          CLIP STUDIO PAINT</p> 
-      </aside>
-    </div>  
-  </div>
+        <aside>
+          <h1>ポケモンまとめ①</h1>
+          <p>らくがき。<br>
+            <br>
+            使用ソフト<br>
+            CLIP STUDIO PAINT
+          </p>
+        </aside>
+      </div>
+    </div>
 
   </div>
   <script src="script.js"></script>
 
 </body>
+
 </html>
